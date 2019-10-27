@@ -8,9 +8,6 @@ import { Container, Row, Col } from 'reactstrap';
 import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
 
 
-var data = [];
-
-
 class Panel extends Component {
 
 
