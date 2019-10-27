@@ -1,6 +1,5 @@
-# React Webpack in Docker Project Template
+# React Webpack and Docker Base Project
 
-## React16 Webpack4 Docker
 
 ## Setup
 
