@@ -41,6 +41,6 @@ and enter
    
     Number of windows: 10
 
-and click Send
+finally, click Send
 
 You should see the chart on the right side of the screen.
