@@ -12,7 +12,5 @@ dist
 
 # misc
 .DS_Store
+.env
 npm-debug.log
-__pycache__
-.*swp*
-.pyc
