@@ -24,3 +24,24 @@ To jump into container
 To stop running containers
 
     make stop
+
+To test the UI, navigate to
+
+    http://0.0.0.0:8080/
+
+and enter 
+   
+    Device UUID: cf4844bc-a107-4e0a-84e1-fa04d76d388c
+                   
+ 
+    End Time: 1524835983
+
+
+    Window Time: 60
+
+   
+    Number of windows: 10
+
+and click Send
+
+You should see the chart on the right side of the screen.
