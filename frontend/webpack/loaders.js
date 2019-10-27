@@ -3,7 +3,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CSSExtract = new ExtractTextPlugin('styles.[chunkhash].css')
 const UglifyWebpackPlugin = require('uglifyjs-webpack-plugin')
 const PurifyCSSPlugin = require('purifycss-webpack')
-const GitRevisionPlugin = require('git-revision-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 
@@ -100,14 +99,6 @@ exports.minifyJavaScript = () => ({
 
 exports.scopeHoisting = () => ({
     plugins: [new webpack.optimize.ModuleConcatenationPlugin()],
-})
-
-exports.attachRevision = () => ({
-    plugins: [
-        new webpack.BannerPlugin({
-            banner: new GitRevisionPlugin().version(),
-        }),
-    ],
 })
 
 exports.purifyCSS = ({ paths, minimize }) => ({

@@ -3,6 +3,7 @@ const merge = require('webpack-merge')
 const glob = require('glob')
 const dotenv = require('dotenv').config(path.resolve('../../.env')).parsed
 const Dotenv = require('dotenv-webpack');
+const webpack = require('webpack');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
@@ -32,7 +33,7 @@ const commonConfig = merge([
             path: paths.dist,
         },
         resolve: {
-            extensions: ['.js'],
+            extensions: ['.js', '.ts', '.tsx'],
         },
         mode: dotenv.NODE_ENV,
         plugins: [
@@ -84,7 +85,6 @@ const productionConfig = merge([
     }),
 
     loaders.scopeHoisting(),
-    loaders.attachRevision(),
 ])
 
 module.exports = () => {

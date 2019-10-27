@@ -22,11 +22,13 @@ services:
     image: frontend:latest
     env_file:
       - ./frontend/.env
-    command: bash -c "npm install && npm start"
+    command: bash -c "npm install &&  npm start"
     volumes:
       - ./frontend:/frontend
     ports:
       - "8080:8080"
+    depends_on:
+      - api
 
   redis:
      image: redis
