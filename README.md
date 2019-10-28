@@ -1,4 +1,4 @@
-# React Webpack and Docker Base Project
+# React D3 Webpack and Docker Project
 
 
 ## Setup
@@ -43,4 +43,4 @@ and enter
 
 finally, click Send
 
-You should see the chart on the right side of the screen.
+You should see the D3 chart on the right side of the screen.

@@ -38,14 +38,6 @@ class Panel extends Component {
     };
 
 
-    handleChanges = (e) => {
-       const input = e.target;
-       const name = input.name;
-       const value = input.value;
-      this.setState({ [name]: value });
-    };
-
-
     handleSubmit(event) {
         event.preventDefault();
         const form = event.target;
@@ -77,7 +69,6 @@ class Panel extends Component {
               );
 
               ReactDOM.render(element, document.getElementById('chart'));
-              this.forceUpdate();
            });
 
         }).catch(function(error) {
